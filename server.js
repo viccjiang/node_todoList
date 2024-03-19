@@ -151,7 +151,7 @@ const requestListener = (req, res) => {
 const server = http.createServer(requestListener)
 
 // 監聽 port 3005
-server.listen(3005);
+server.listen(process.env.PORT || 3005);
 
 // 終端機輸入 node server.js 或是 nodemon server.js
 // 開啟網頁 http://127.0.0.1:3005/todos
